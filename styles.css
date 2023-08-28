@@ -1,6 +1,8 @@
 body {
   text-align: center;
   background-color: #283149;
+  display: inline-block;
+  margin: auto;
 }
 
 h1 {
@@ -8,10 +10,21 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
+  align-items: center;
+  display: inline-block ;
+}
+.main{
+  display: inline-block;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 footer {
+  display: inline-block;
+  margin-top: 1rem;
   color: #DBEDF3;
   font-family: sans-serif;
 }
@@ -46,7 +59,8 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
+  text-align: center;
+  margin: 1% ;
 }
 
 .game-over {
@@ -79,4 +93,40 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+@media screen and (max-width: 786px) {
+
+  .drum{
+    display: inline-block;
+    
+  }
+  .set{
+   
+    
+    margin: 0;
+    
+  }
+  h1{
+    font-size: 40px;
+  }
+  .l{
+    grid-area:  3/2;
+  }
+  .set .drum{
+    align-self: center;
+    justify-self: center;
+    margin: 0.5rem;
+    height:100px ;
+    width: 100px;
+    font-size: 50px;
+  }
+  .main{
+    height: 100vh;
+    width: 100vw;
+  }
+  footer{
+    font-size: 18px;
+    margin-top: 2rem;
+  }
 }
